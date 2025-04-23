@@ -1,0 +1,9 @@
+from typing import Any, Self
+
+
+class File:
+    tags: dict[str, list[str]]
+
+    def __init__(self, path: str, save_on_exit: bool = False): ...
+    def __enter__(self) -> Self: ...
+    def __exit__(self, *exc_info: Any): ...

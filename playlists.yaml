@@ -1,0 +1,17 @@
+playlists:
+  - name: Supreme
+    conditions:
+      rating: !!int 10
+  - name: Good
+    conditions:
+      rating:
+        min: 8
+  - name: Pop
+    conditions:
+      genre: Pop
+  - name: Classical
+    conditions:
+      genre: Classical
+  - name: Recently Added
+    sort_by:
+      - -date_added
